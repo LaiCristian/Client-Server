@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Adunarea rezultatului</title>
+</head>
+<body>
+<form th:action="@{/multiply}" th:object="${math}" method="post">
+    <input type="text" th:field="${math.first}">
+    <input type="text" th:field="${math.second}">
+    <p th:text="${mul}"></p>
+    <button>Rezultatul</button>
+</form>
+
+</body>
+</html>
